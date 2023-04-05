@@ -23,10 +23,8 @@
     <!-- Header section  -->
     <header>
       <!-- Navigation section -->
-      <nav
-        class="container navbar navbar-expand-lg bg-body-tertiary mx-auto fixed-top"
-      >
-        <div class="container-fluid">
+      <nav class="container navbar navbar-expand-lg bg-body-tertiary mx-auto">
+        <div class="container">
           <button
             class="navbar-toggler"
             type="button"
@@ -42,24 +40,24 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav m-auto">
               <li class="nav-item">
-                <a class="nav-link active fs-6" aria-current="page" href="#"
+                <a class="nav-link active fs-6" aria-current="page" href="#home"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6" href="#">Courses</a>
+                <a class="nav-link fs-6" href="#courses">Courses</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6" href="#">Deals</a>
+                <a class="nav-link fs-6" href="#deals">Deals</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6" href="#">Success</a>
+                <a class="nav-link fs-6" href="#success">Success</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6" href="#">About</a>
+                <a class="nav-link fs-6" href="#feedback">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6" href="#">Register</a>
+                <a class="nav-link fs-6" href="#register">Register</a>
               </li>
             </ul>
             <div class="mt-lg-3">
@@ -71,7 +69,7 @@
         </div>
       </nav>
       <!-- slider section -->
-      <section class="container my-5 pt-5">
+      <section class="container mb-5" id="home">
         <div
           id="carouselExampleAutoplaying"
           class="carousel slide"
@@ -81,32 +79,7 @@
             <div class="carousel-item active">
               <img
                 src="images/cover/cover-1.png"
-                class="w-100 h-100"
-                alt="..."
-              />
-              <div
-                class="carousel-caption d-lg-block d-md-block d-none z-3 m-auto"
-                style="max-width: 500px"
-              >
-                <h1 class="text-center fw-bold lh-sm">
-                  Get Started Digital <br />
-                  Learning
-                </h1>
-                <p class="text-center">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-                <div class="">
-                  <button class="btn btn-info text-white fw-semibold px-3">
-                    Get Started
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="images/cover/cover-2.jpg"
-                class="w-100 h-100"
+                class="h-100 w-100"
                 alt="..."
               />
               <div
@@ -131,7 +104,32 @@
             <div class="carousel-item">
               <img
                 src="images/cover/cover-3.jpg"
-                class="w-100 h-100"
+                class="h-100 w-100"
+                alt="..."
+              />
+              <div
+                class="carousel-caption d-lg-block d-md-block d-none z-3 m-auto"
+                style="max-width: 500px"
+              >
+                <h1 class="text-center fw-bold lh-sm">
+                  Get Started Digital <br />
+                  Learning
+                </h1>
+                <p class="text-center">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div class="">
+                  <button class="btn btn-info text-white fw-semibold px-3">
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/cover/cover-1.png"
+                class="h-100 w-100"
                 alt="..."
               />
               <div
@@ -178,7 +176,7 @@
     <!-- Main section  -->
     <main>
       <!-- Courses -->
-      <section class="container my-5">
+      <section class="container my-5" id="courses">
         <!-- Course Header  -->
         <div class="container-fluid my-5 mx-auto" style="max-width: 600px">
           <h1 class="fw-bold text-center">Discover Our Popular Courses</h1>
@@ -361,7 +359,7 @@
         </div>
       </section>
       <!-- Elearning Institute section  -->
-      <section class="container py-5 my-5">
+      <section class="container py-5 my-5" id="deals">
         <div class="row gy-4">
           <div class="col-lg-6 col-md-6 col-12">
             <img src="images/working.png" class="img-fluid" alt="" />
@@ -414,7 +412,7 @@
         </div>
       </section>
       <!-- Ready to join -->
-      <section class="container my-5">
+      <section class="container my-5" id="register">
         <div class="card bg-primary bg-opacity-75 border-0 rounded">
           <div
             class="card-body p-5 d-flex flex-lg-row flex-md-column flex-column justify-content-lg-between justify-content-md-center justify-content-sm-center align-items-center"
@@ -438,7 +436,7 @@
         </div>
       </section>
       <!-- Successful Students section  -->
-      <section class="container my-5">
+      <section class="container my-5" id="success">
         <!-- Students heading -->
         <article
           class="text-lg-start text-md-start text-center ms-2 mb-4 mx-auto"
@@ -512,7 +510,7 @@
         </div>
       </section>
       <!-- Students Feedback section -->
-      <section class="container my-5">
+      <section class="container my-5" id="feedback">
         <!-- Students Feedback heading section -->
         <div class="container-fluid mb-4 mx-auto" style="max-width: 600px">
           <h1 class="fw-bold text-center px-lg-5">Some Students Feedback</h1>
@@ -523,7 +521,13 @@
         </div>
         <!-- Students Feedback details section -->
         <article class="row g-3">
-          <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+            <span
+              class="position-absolute top-50 start-5 translate-middle badge rounded-circle bg-info bg-opacity-25 d-lg-block d-md-none d-none"
+            >
+              <i class="fa-solid fa-angle-left text-info fs-5"></i>
+              <span class="visually-hidden">unread messages</span>
+            </span>
             <div class="border rounded p-4">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="">
@@ -554,7 +558,13 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+            <span
+              class="position-absolute top-50 start-100 me-5 translate-middle badge rounded-circle bg-info d-lg-block d-md-none d-none"
+            >
+              <i class="fa-solid fa-angle-right text-white fs-3"></i>
+              <span class="visually-hidden">unread messages</span>
+            </span>
             <div class="border rounded p-4">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="">
@@ -617,10 +627,10 @@
               </h2>
               <div
                 id="flush-collapseOne"
-                class="accordion-collapse collapse show"
+                class="accordion-collapse collapse"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div class="accordion-body text-body-tertiary">
                   There are many variations of passages of available, but the
                   majority have suffered alteration in some form, by injected
                   humour, or randomised words which don't look even slightly
@@ -648,7 +658,7 @@
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div class="accordion-body text-body-tertiary">
                   There are many variations of passages of available, but the
                   majority have suffered alteration in some form, by injected
                   humour, or randomised words which don't look even slightly
@@ -676,7 +686,7 @@
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div class="accordion-body text-body-tertiary">
                   There are many variations of passages of available, but the
                   majority have suffered alteration in some form, by injected
                   humour, or randomised words which don't look even slightly
@@ -721,24 +731,34 @@
       <section class="container my-5 d-lg-block d-md-none d-none">
         <!-- Companies header section  -->
         <div class="container-fluid mb-4 mx-auto">
-          <h1 class="fw-bold text-center">
-            Trusted by over 800+ companies
-          </h1>
+          <h1 class="fw-bold text-center">Trusted by over 800+ companies</h1>
         </div>
         <!-- Type of Companie section  -->
         <div class="d-flex align-items-center justify-content-around">
-          <img src="images/company/company-1.png" alt="">
-          <img src="images/company/company-2.png" alt="">
-          <img src="images/company/company-3.png" alt="">
-          <img src="images/company/company-4.png" alt="">
-          <img src="images/company/company-5.png" alt="">
-          <img src="images/company/company-6.png" alt="">
+          <img src="images/company/company-1.png" alt="" />
+          <img src="images/company/company-2.png" alt="" />
+          <img src="images/company/company-3.png" alt="" />
+          <img src="images/company/company-4.png" alt="" />
+          <img src="images/company/company-5.png" alt="" />
+          <img src="images/company/company-6.png" alt="" />
         </div>
       </section>
     </main>
-
-    <footer>
-      
+    <!-- footer section -->
+    <footer class="container-fluid bg-black py-5 mt-5">
+      <div class="text-center text-white m-auto" style="max-width: 300px">
+        <h2 class="fw-bold">Start Dreaming</h2>
+        <p class="fs-6">
+          Office 41, Zawaya Buildin, Ghala Muscat, Sultanate of Oman
+        </p>
+        <p>Privacy Ploicy | Terms of use</p>
+        <div class="">
+          <i class="fa-brands fa-facebook me-1"></i>
+          <i class="fa-brands fa-square-twitter me-1"></i>
+          <i class="fa-brands fa-linkedin me-1"></i>
+          <i class="fa-brands fa-tiktok me-1"></i>
+        </div>
+      </div>
     </footer>
     <!-- Javascript link  -->
     <script
