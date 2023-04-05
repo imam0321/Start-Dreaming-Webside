@@ -23,7 +23,9 @@
     <!-- Header section  -->
     <header>
       <!-- Navigation section -->
-      <nav class="container navbar navbar-expand-lg bg-body-tertiary mx-auto">
+      <nav
+        class="container navbar navbar-expand-lg bg-body-tertiary mx-auto fixed-top"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -38,7 +40,7 @@
           </button>
           <a class="navbar-brand fs-1 fw-semibold" href="#">Start Dreaming</a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mx-auto mt-lg-3 mb-2 mb-lg-0">
+            <ul class="navbar-nav m-auto">
               <li class="nav-item">
                 <a class="nav-link active fs-6" aria-current="page" href="#"
                   >Home</a
@@ -68,33 +70,59 @@
           </div>
         </div>
       </nav>
-      <!-- slider section  -->
-      <section class="container rounded-5">
+      <!-- slider section -->
+      <section class="container my-5 pt-5">
         <div
           id="carouselExampleAutoplaying"
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner rounded-1">
             <div class="carousel-item active">
               <img
                 src="images/cover/cover-1.png"
-                class="h-100 w-100"
+                class="w-100 h-100"
                 alt="..."
               />
               <div
-                class="carousel-caption d-none d-lg-block top-50 start-50 translate-middle w-50 z-3"
+                class="carousel-caption d-lg-block d-md-block d-none z-3 m-auto"
+                style="max-width: 500px"
               >
-                <h1 class="text-center fs-1 fw-bold p-2 lh-sm">
+                <h1 class="text-center fw-bold lh-sm">
                   Get Started Digital <br />
                   Learning
                 </h1>
-                <p class="text-center py-3">
+                <p class="text-center">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
                 <div class="">
-                  <button class="btn btn-info text-white fw-semibold px-4">
+                  <button class="btn btn-info text-white fw-semibold px-3">
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/cover/cover-2.jpg"
+                class="w-100 h-100"
+                alt="..."
+              />
+              <div
+                class="carousel-caption d-lg-block d-md-block d-none z-3 m-auto"
+                style="max-width: 500px"
+              >
+                <h1 class="text-center fw-bold lh-sm">
+                  Get Started Digital <br />
+                  Learning
+                </h1>
+                <p class="text-center">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div class="">
+                  <button class="btn btn-info text-white fw-semibold px-3">
                     Get Started
                   </button>
                 </div>
@@ -103,46 +131,23 @@
             <div class="carousel-item">
               <img
                 src="images/cover/cover-3.jpg"
-                class="h-100 w-100"
+                class="w-100 h-100"
                 alt="..."
               />
               <div
-                class="carousel-caption d-none d-lg-block top-50 start-50 translate-middle w-50 z-3"
+                class="carousel-caption d-lg-block d-md-block d-none z-3 m-auto"
+                style="max-width: 500px"
               >
-                <h1 class="text-center fs-1 fw-bold p-2 lh-sm">
+                <h1 class="text-center fw-bold lh-sm">
                   Get Started Digital <br />
                   Learning
                 </h1>
-                <p class="text-center py-3">
+                <p class="text-center">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
                 <div class="">
-                  <button class="btn btn-info text-white fw-semibold px-4">
-                    Get Started
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="images/cover/cover-3.jpg"
-                class="h-100 w-100"
-                alt="..."
-              />
-              <div
-                class="carousel-caption d-none d-lg-block top-50 start-50 translate-middle w-50 z-3"
-              >
-                <h1 class="text-center fs-1 fw-bold p-2 lh-sm">
-                  Get Started Digital <br />
-                  Learning
-                </h1>
-                <p class="text-center py-3">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-                <div class="">
-                  <button class="btn btn-info text-white fw-semibold px-4">
+                  <button class="btn btn-info text-white fw-semibold px-3">
                     Get Started
                   </button>
                 </div>
@@ -175,11 +180,9 @@
       <!-- Courses -->
       <section class="container my-5">
         <!-- Course Header  -->
-        <div class="container-fluid my-5">
-          <h1 class="fw-bold text-center px-lg-5 mx-auto">
-            Discover Our Popular Courses
-          </h1>
-          <p class="text-center text-body-tertiary w-50 mx-auto">
+        <div class="container-fluid my-5 mx-auto" style="max-width: 600px">
+          <h1 class="fw-bold text-center">Discover Our Popular Courses</h1>
+          <p class="text-center text-body-tertiary">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </p>
@@ -364,10 +367,10 @@
             <img src="images/working.png" class="img-fluid" alt="" />
           </div>
           <div
-            class="col-lg-6 col-md-6 col-12 my-lg-auto my-md-auto my-sm-5 lh-lg"
+            class="col-lg-6 col-md-6 col-12 my-auto lh-lg"
+            style="max-width: 500px"
           >
-            <!-- p-lg-4 p-md-0 p-4 -->
-            <div class="container">
+            <div class="p-lg-4 p-md-4 p-4">
               <h1 class="">Explore The elearning Institute</h1>
               <p>
                 There are many variations of passages of Lorem Ipsum available,
@@ -416,7 +419,10 @@
           <div
             class="card-body p-5 d-flex flex-lg-row flex-md-column flex-column justify-content-lg-between justify-content-md-center justify-content-sm-center align-items-center"
           >
-            <div class="text-white text-lg-start text-md-center text-center">
+            <div
+              class="text-white text-lg-start text-md-center text-center"
+              style="max-width: 500px"
+            >
               <h1 class="card-title">Ready to join?</h1>
               <p class="card-text fs-6 mb-3">
                 It is a long established fact that a reader will be distracted
@@ -434,9 +440,12 @@
       <!-- Successful Students section  -->
       <section class="container my-5">
         <!-- Students heading -->
-        <article class="text-lg-start text-md-start text-center ms-2 mb-4">
-          <h1 class="fw-bold mx-auto">Meet Our Successful Students</h1>
-          <p class="text-body-tertiary w-50 mx-lg-0 mx-md-0 mx-auto">
+        <article
+          class="text-lg-start text-md-start text-center ms-2 mb-4 mx-auto"
+          style="max-width: 540px"
+        >
+          <h1 class="fw-bold">Meet Our Successful Students</h1>
+          <p class="text-body-tertiary">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </p>
@@ -505,18 +514,16 @@
       <!-- Students Feedback section -->
       <section class="container my-5">
         <!-- Students Feedback heading section -->
-        <div class="container-fluid my-5">
-          <h1 class="fw-bold text-center px-lg-5 mx-auto">
-            Some Students Feedback
-          </h1>
-          <p class="text-center text-body-tertiary w-50 mx-auto">
+        <div class="container-fluid mb-4 mx-auto" style="max-width: 600px">
+          <h1 class="fw-bold text-center px-lg-5">Some Students Feedback</h1>
+          <p class="text-center text-body-tertiary">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </p>
         </div>
         <!-- Students Feedback details section -->
         <article class="row g-3">
-          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="border rounded p-4">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="">
@@ -547,7 +554,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="border rounded p-4">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="">
@@ -574,6 +581,108 @@
                 <div class="">
                   <h6 class="card-title">Shanta Akter</h6>
                   <p class="card-text text-body-tertiary">Graphic Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- Questions section -->
+      <section class="container my-5">
+        <!-- Questions heading section -->
+        <div class="container-fluid mb-4 mx-auto" style="max-width: 600px">
+          <h1 class="fw-bold text-center px-lg-5">
+            Frequently Asked Questions
+          </h1>
+          <p class="text-center text-body-tertiary">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <!-- Questions answers section -->
+        <article class="mx-auto" style="max-width: 870px">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  What other services are you compatible with?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  There are many variations of passages of available, but the
+                  majority have suffered alteration in some form, by injected
+                  humour, or randomised words which don't look even slightly
+                  believable. If you are going to use a passage of Lorem Ipsum,
+                  you need to be sure there isn't anything embarrassing hidden
+                  in the middle of text. All the generators on the.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                What other services are you compatible with?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  There are many variations of passages of available, but the
+                  majority have suffered alteration in some form, by injected
+                  humour, or randomised words which don't look even slightly
+                  believable. If you are going to use a passage of Lorem Ipsum,
+                  you need to be sure there isn't anything embarrassing hidden
+                  in the middle of text. All the generators on the.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                What other services are you compatible with?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  There are many variations of passages of available, but the
+                  majority have suffered alteration in some form, by injected
+                  humour, or randomised words which don't look even slightly
+                  believable. If you are going to use a passage of Lorem Ipsum,
+                  you need to be sure there isn't anything embarrassing hidden
+                  in the middle of text. All the generators on the.
                 </div>
               </div>
             </div>
